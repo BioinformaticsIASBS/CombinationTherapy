@@ -9,10 +9,16 @@ In our experiments, we utilized Python 3.9.4.
 ## **ML methods**
 To train ML models, you need to follow these steps:
 1. Create ratioed data using the command for all ratios that include 1:3, 1:5, 1:10, 1:100, and 1:500. <br>
-`python create_ratioed_data_ML.py`
-2. Use the following command to apply SVM and RF on the ratioed data with ML.py script. <br>
-`python ML.py`
+```bash
+python create_ratioed_data_ML.py
+```
+3. Use the following command to apply SVM and RF on the ratioed data with ML.py script. <be>
+```bash
+python ML.py
+```
 ## **DRaW method**
-To train the DRaW model, you can use the following command as an example: <br>
-`python DRaW.py --data_path DRaW --ratio 3 --result_path DRaW_results/model`
+To train the DRaW model, you can use the following command as an example: <be>
+```bash
+python DRaW.py --data_path DRaW --ratio 3 --result_path DRaW_results/model
+```
 
