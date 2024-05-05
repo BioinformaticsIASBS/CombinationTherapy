@@ -12,7 +12,7 @@ To train ML models, you need to follow these steps:
 ```bash
 python create_ratioed_data_ML.py
 ```
-3. Use the following command to apply SVM and RF on the ratioed data with ML.py script. <be>
+2. Use the following command to apply SVM and RF on the ratioed data with ML.py script. <be>
 ```bash
 python ML.py
 ```
