@@ -42,7 +42,7 @@ for ratio in ratios:
     ratioed_X = []
     for tup in XIndex:
         #ratioed_X.append(np.concatenate((D[tup[0]], D[tup[1]], T[tup[2]])))
-        ratioed_X.append(np.concatenate((D[tup[0]], T[tup[2]], D[tup[1]])))
+        ratioed_X.append(np.concatenate((D[tup[0]], D[tup[1]], T[tup[2]] )))
 
     # save splitted data
     np.savetxt('../Data/ML/XIndex_ratio'+str(ratio)+'.txt' , X = XIndex)
