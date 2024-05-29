@@ -23,10 +23,12 @@ python DRaW.py --data_path DRaW --ratio 3 --result_path DRaW_results/model
 ```
 
 ## **Citation**
+```bash
 @article{majidifar2024combination,
   title={Combination Therapy Synergism Prediction for Virus Treatment Using Machine and Deep Learning Models},
   author={Majidifar, Shayan and Zabihian, Arash and Hooshmand, Mohsen},
-  year={2024}
+  year={2024},
   url={[https://doi.org/10.1038/s41598-023-36438-0](https://doi.org/10.21203/rs.3.rs-4389305/v1)}
 }
+```
 
