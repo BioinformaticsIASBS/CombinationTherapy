@@ -1,3 +1,6 @@
+# Combination Therapy Synergism Prediction for Virus Treatment Using Machine and Deep Learning Models
+## by Shayan Majidifar, Arash Zabihian, Mohsen Hooshmand
+
 # **Data**
 All necessary data for training ML and DRaW models are stored in the "Data" folder, which is further divided into ML and DRaW folders. Each essential file will be introduced in the following lines:
 * **Similarity_Matrix_Drugs:** It contains similarity scores between each paired drug that are calculated using "Tanimoto" similarity.
