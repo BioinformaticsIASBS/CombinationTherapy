@@ -173,7 +173,7 @@ decitabine: DB01262
 enviroxime: nan
 grazoprevir: DB11575
 meclofenamic acid: DB00939
-mefenamic acid : DB00784
+mefenamicÂ acidÂ : DB00784
 selenazofurin: nan
 silibinin: DB09298
 silvestrol: nan
