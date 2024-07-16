@@ -24,13 +24,18 @@ methods_max_features = ['sqrt','log2']
 
 svm_metric_lists = [[], [], [], [], [], [], [], [], []]
 rf_metric_lists = [[], [], [], [], [], [], [], []]
+
+#results_path = 'ML_results'
+#ML_results_directory = '../' + results_path
+#os.mkdir(ML_results_directory)
+
 svm_summary_file = open('../ML_results/SVM summary.txt', 'w')
 rf_summary_file = open('../ML_results/RF summary.txt', 'w')
 
 for ratio in ratios:
     print('---------------------- Ratio : 1 to {} ----------------------'.format(ratio))
-    ratioed_X = np.load('../Data/ML/' + str(ratio) + '-to-1 X.npz')['arr_0']
-    ratioed_y = np.load('../Data/ML/' + str(ratio) + '-to-1 y.npz')['arr_0']
+    ratioed_X = np.load('../CombTVir_Dataset/ML/' + str(ratio) + '-to-1 X.npz')['arr_0']
+    ratioed_y = np.load('../CombTVir_Dataset/ML/' + str(ratio) + '-to-1 y.npz')['arr_0']
 
     num_folds = 10
     kfolder = StratifiedKFold(n_splits=num_folds, shuffle=True)
