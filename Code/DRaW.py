@@ -19,16 +19,16 @@ from classifier_evaluation_DRaW import evaluate, ROC_curve, PR_curve, threshold_
 def train_DRaW_model(path, ratio, result_path):
 
   # drug
-  mixed = np.loadtxt('../Data/Similarity_Matrix_Drugs.txt')
+  mixed = np.loadtxt('../CombTVir_Dataset/Similarity_Matrix_Drugs.txt')
 
   # virus
-  mixed_2 = np.loadtxt('../Data/Similarity_Matrix_Viruses.txt')
+  mixed_2 = np.loadtxt('../CombTVir_Dataset/Similarity_Matrix_Viruses.txt')
 
 
-  with open('../Data/Y.npy', 'rb') as f:
+  with open('../CombTVir_Dataset/Y.npy', 'rb') as f:
       Y = np.load(f)
 
-  with open('../Data/Xindex.npy', 'rb') as f:
+  with open('../CombTVir_Dataset/Xindex.npy', 'rb') as f:
       XIndex = np.load(f)
 
   XIndex = np.array(XIndex)
@@ -58,8 +58,8 @@ def train_DRaW_model(path, ratio, result_path):
   XIndex, Y = shuffle(XIndex, Y)
 
   # save splitted data
-  np.savetxt(fname='../Data/'+path+'/XIndex_ratio'+str(ratio)+'.txt' , X = XIndex)
-  np.savetxt(fname='../Data/'+path+'/Y_ratio'+str(ratio)+'.txt' , X = Y)
+  np.savetxt(fname='../CombTVir_Dataset/'+path+'/XIndex_ratio'+str(ratio)+'.txt' , X = XIndex)
+  np.savetxt(fname='../CombTVir_Dataset/'+path+'/Y_ratio'+str(ratio)+'.txt' , X = Y)
 
   def buildModule(inputShape,  output_bias=None):
       drop_out_rate = 0.5
