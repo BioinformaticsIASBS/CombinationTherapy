@@ -10,12 +10,12 @@ def ratio_zero_one_index_func(one_labels_index, zero_labels_index, ratio_value):
     print('ratio= ', len(zero_labels_index_with_ratio)/len(one_labels_index) )
     return zero_labels_index_with_ratio
 
-D = np.loadtxt('../Data/Similarity_Matrix_Drugs.txt')
-T = np.loadtxt('../Data/Similarity_Matrix_Viruses.txt')
-with open('../Data/Y.npy', 'rb') as f:
+D = np.loadtxt('../CombTVir_Dataset/Similarity_Matrix_Drugs.txt')
+T = np.loadtxt('../CombTVir_Dataset/Similarity_Matrix_Viruses.txt')
+with open('../CombTVir_Dataset/Y.npy', 'rb') as f:
     Y = np.load(f)
 
-with open('../Data/Xindex.npy', 'rb') as f:
+with open('../CombTVir_Dataset/Xindex.npy', 'rb') as f:
     XIndex = np.load(f)
 
 XIndex = np.array(XIndex)
@@ -45,7 +45,7 @@ for ratio in ratios:
         ratioed_X.append(np.concatenate((D[tup[0]], D[tup[1]], T[tup[2]] )))
 
     # save splitted data
-    np.savetxt('../Data/ML/XIndex_ratio'+str(ratio)+'.txt' , X = XIndex)
-    np.savetxt('../Data/ML/Y_ratio'+str(ratio)+'.txt' , X = Y)
-    np.savez_compressed('../Data/ML/' + str(ratio) + '-to-1 y.npz', np.array(Y))
-    np.savez_compressed('../Data/ML/' + str(ratio) + '-to-1 X.npz', np.array(ratioed_X))
+    np.savetxt('../CombTVir_Dataset/ML/XIndex_ratio'+str(ratio)+'.txt' , X = XIndex)
+    np.savetxt('../CombTVir_Dataset/ML/Y_ratio'+str(ratio)+'.txt' , X = Y)
+    np.savez_compressed('../CombTVir_Dataset/ML/' + str(ratio) + '-to-1 y.npz', np.array(Y))
+    np.savez_compressed('../CombTVir_Dataset/ML/' + str(ratio) + '-to-1 X.npz', np.array(ratioed_X))
