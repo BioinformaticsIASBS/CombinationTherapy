@@ -1,4 +1,4 @@
-# **The CombTVir_Dataset details**
+# **The CombTVir Dataset files**
 * **“Comb_DDV.csv” contains the info of drug_drug_virus interactions.**
 * **“drug_dict.txt” contains the drugs’ names and their corresponding DrugBank IDs.**
 * **“virus_dict.txt” contains the viruses’ names and their corresponding NCBI IDs.**
