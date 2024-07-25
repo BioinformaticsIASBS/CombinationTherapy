@@ -3,10 +3,15 @@
 
 # **Data**
 All necessary data for training ML and DRaW models are stored in the "Data" folder, which is further divided into ML and DRaW folders. Each essential file will be introduced in the following lines:
-* **Similarity_Matrix_Drugs:** It contains similarity scores between each paired drug that are calculated using "Tanimoto" similarity.
-* **Similarity_Matrix_Viruses:** It contains similarity scores between each paired virus that are calculated using sequence alignment.
-* **Xindex.npy:** "It includes all potential combinations, comprising of two antivirals and a virus."
-* **Y.npy:** This file includes the labels that match each of the compounds in the "Xindex.npy" file.
+* **“Comb_DDV.csv” contains the info of drug_drug_virus interactions.**
+* **“drug_dict.txt” contains the drugs’ names and their corresponding DrugBank IDs.**
+* **“virus_dict.txt” contains the viruses’ names and their corresponding NCBI IDs.**
+* **“Virus_fasta.fasta” contains the viruses’ sequences in FASTA format.**
+* **“Drugs_info.csv” is a table in which each row drug name, its corresponding DrugBank ID, its SMILES, and generated Tanimoto similarities with all drugs in the dataset.**
+* **“Xindex.npy” is a Python binary data file that contains all Cartesian products of drug×drug× virus (including positive and negative combinations.)**
+* **“Y.npy” contains the corresponding label of each combination in Xindex.npy.** 
+* **“Similarity_Matrix_Drugs.txt” contains the drug’s Tanimato similarities and is arranged in drug_dict file order.** 
+* **“Similarity_Matrix_Viruses” contains virus sequence alignment score and is arranged in the order of the virus_dict file.**
 # **Train DRaW and ML models**
 In our experiments, we utilized Python 3.9.4.
 ## **ML methods**
