@@ -7,4 +7,4 @@
 * **“Xindex.npy” is a Python binary data file that contains all Cartesian products of drug×drug× virus (including positive and negative combinations.)**
 * **“Y.npy” contains the corresponding label of each combination in Xindex.npy.** 
 * **“Similarity_Matrix_Drugs.txt” contains the drug’s Tanimato similarities and is arranged in drug_dict file order.** 
-* **Similarity_Matrix_Viruses” contains virus sequence alignment score and is arranged in the order of the virus_dict file.**
+* **“Similarity_Matrix_Viruses” contains virus sequence alignment score and is arranged in the order of the virus_dict file.**
