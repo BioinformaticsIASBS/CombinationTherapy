@@ -2,7 +2,7 @@
 ## by Shayan Majidifar, Arash Zabihian, Mohsen Hooshmand
 
 # **Data**
-All necessary data for training ML and DRaW models are stored in the "CombTVir_Dataset" folder, which is further divided into ML and DRaW folders. Each essential file will be introduced in the following lines:
+All necessary data for training ML and DRaW models are stored in the "CombTVir_Dataset" folder, which is further divided into ML and DRaW folders. The dataset contains:
 * **“Comb_DDV.csv” contains the info of drug_drug_virus interactions.**
 * **“drug_dict.txt” contains the drugs’ names and their corresponding DrugBank IDs.**
 * **“virus_dict.txt” contains the viruses’ names and their corresponding NCBI IDs.**
