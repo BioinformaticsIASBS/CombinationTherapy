@@ -6,5 +6,5 @@
 * **“Drugs_info.csv” is a table in which each row drug name, its corresponding DrugBank ID, its SMILES, and generated Tanimoto similarities with all drugs in the dataset.**
 * **“Xindex.npy” is a Python binary data file that contains all Cartesian products of drug×drug× virus (including positive and negative combinations.)**
 * **“Y.npy” contains the corresponding label of each combination in Xindex.npy.** 
-* **“Similarity_Matrix_Drugs.txt” contains the Tanimoto similarities of drugs, arranged in the order of the drug_dict file.** 
-* **“Similarity_Matrix_Viruses.txt” contains Tanimoto similarities of viruses and is arranged in the order of the virus_dict file.**
+* **“Similarity_Matrix_Drugs.txt” contains the drug’s Tanimato similarities and is arranged in drug_dict file order.** 
+* **Similarity_Matrix_Viruses” contains virus sequence alignment score and is arranged in the or-der of the virus_dict file.**
