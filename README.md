@@ -33,11 +33,19 @@ python DRaW.py --data_path DRaW --ratio 3 --result_path DRaW_results/model
 
 ## **Citation**
 ```
-@article{majidifar2024combination,
-  title={Combination Therapy Synergism Prediction for Virus Treatment Using Machine Learning Models},
-  author={Majidifar, Shayan and Zabihian, Arash and Hooshmand, Mohsen},
-  year={2024},
-  url={https://doi.org/10.21203/rs.3.rs-4389305/v1}
+@article{Majidifar24,
+    doi = {10.1371/journal.pone.0309733},
+    author = {Majidifar, Shayan AND Zabihian, Arash AND Hooshmand, Mohsen},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {Combination therapy synergism prediction for virus treatment using machine learning models},
+    year = {2024},
+    month = {09},
+    volume = {19},
+    url = {https://doi.org/10.1371/journal.pone.0309733},
+    pages = {1-16},
+    number = {9},
+
 }
 ```
 
